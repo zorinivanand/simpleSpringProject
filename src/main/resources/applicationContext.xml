@@ -9,7 +9,7 @@
 
     <bean id="Bean"
           class="ru.zorinivan.simplespringproject2.Bean">
-        <constructor-arg value="MyNameIvan"/>
+        <constructor-arg value="textAC"/>
     </bean>
 
 </beans>

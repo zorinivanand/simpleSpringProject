@@ -7,8 +7,13 @@ public class Test {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
                 "applicationContext.xml");
 
-        Bean bean = context.getBean("Bean",Bean.class);
+        Bean beanName = context.getBean("Bean",Bean.class);
+        //beanName.setName("NEWNAME");
         System.out.println(Bean.getName());
+
+        Bean beanYear = context.getBean("Bean",Bean.class);
+        beanYear.setYear(2);
+        System.out.println(Bean.getYear());
         context.close();
     }
 }
