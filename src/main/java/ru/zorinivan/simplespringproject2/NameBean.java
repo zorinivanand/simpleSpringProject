@@ -2,16 +2,11 @@ package ru.zorinivan.simplespringproject2;
 
 import org.springframework.stereotype.Component;
 
-@Component
-class NameBean {
-    private static String name;
+@Component ("NameBean")
+class NameBean implements Profile{
 
-
-    public NameBean(String name) {
-        NameBean.name = name;
+    @Override
+    public String getInfo() {
+        return "UserName1";
     }
-    public static String getName() {
-        return name;
-    }
-    public void setName(String name) {NameBean.name = name;}
 }

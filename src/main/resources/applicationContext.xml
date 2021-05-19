@@ -7,9 +7,5 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="Bean"
-          class="ru.zorinivan.simplespringproject2.Bean">
-        <constructor-arg value="textAC"/>
-    </bean>
-
+<context:component-scan base-package="ru.zorinivan.simplespringproject2"/>
 </beans>
