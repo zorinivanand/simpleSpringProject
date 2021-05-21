@@ -1,5 +1,8 @@
 package ru.zorinivan.simplespringproject2;
 
+import java.util.List;
+
 public interface Profile {
-    String getInfo();
+    int getInfoAge();
+    List<String> getInfoName();
 }
